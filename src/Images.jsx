@@ -15,12 +15,12 @@ function Images() {
   ];
   const array_len = ArrayImags.length;
   const Next = () => {
-    setCount((e) => {
+    setCount((pre) => {
       console.log(e);
-      if (e == array_len - 1) {
+      if (pre == array_len - 1) {
         return 0;
       }
-      let x = e + 1;
+      let x = pre + 1;
       console.log(x);
       return x;
     });
