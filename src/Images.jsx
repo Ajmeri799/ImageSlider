@@ -16,13 +16,10 @@ function Images() {
   const array_len = ArrayImags.length;
   const Next = () => {
     setCount((pre) => {
-      console.log(e);
       if (pre == array_len - 1) {
         return 0;
       }
-      let x = pre + 1;
-      console.log(x);
-      return x;
+      return pre + 1;
     });
   };
 
